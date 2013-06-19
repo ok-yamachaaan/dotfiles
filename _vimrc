@@ -1,8 +1,8 @@
-"vundle plugin manager
-source ~/Dev/gitrepo/env/dotfiles/_vimrc.bundle
+"neobundle plugin manager
+source ~/Dev/gitrepo/dotfiles/_vimrc.bundle
 "basic setting
-source ~/Dev/gitrepo/env/dotfiles/_vimrc.basic
+source ~/Dev/gitrepo/dotfiles/_vimrc.basic
 "plugin unite
-source ~/Dev/gitrepo/env/dotfiles/_vimrc.unite
+source ~/Dev/gitrepo/dotfiles/_vimrc.unite
 "plugin SrcExpl
-source ~/Dev/gitrepo/env/dotfiles/_vimrc.SrcExpl
+source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
