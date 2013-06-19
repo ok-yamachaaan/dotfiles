@@ -1,0 +1,19 @@
+"vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'unite.vim'
+Bundle 'The-NERD-tree'
+Bundle 'taglist.vim'
+Bundle 'wesleyche/SrcExpl'
+Bundle 'wesleyche/Trinity'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'mattn/zencoding-vim'
+"Bundle 'Powerline'
+
+filetype plugin indent on
+

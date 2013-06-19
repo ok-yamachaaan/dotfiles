@@ -1,0 +1,49 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
+export PATH=$HOME/node_modules/.bin:$PATH
+
+# osx alias
+alias pbc='pbcopy'
+
+# Terminal Colorの設定
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# vim
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+# SVN
+# #alias svn='/usr/local/bin/svn'
+
+# Java
+export JAVA_HOME=/Library/Java/Home
+export PATH=$JAVA_HOME/bin:$PATH
+# # デフォルトエンコーディングSJISをUTF-8へ
+export JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+
+# Tomcat
+export TOMCAT_HOME="/usr/local/Cellar/tomcat/7.0.28"
+# # scala
+# export SCALA_HOME=/Users/ozaki/.svm/current/rt
+# PATH=$SCALA_HOME/bin:$PATH
+# export SCALA_DOC_HOME=$SCALA_HOME/../devel-docs/api/
+#
+# export SCALA_CLASSPATH=~/sandbox/scala/yuroyoro/yuroyoro-util/target/yuroyoro-util-1.0.jar
+
+# Maven2
+# export MAVEN_VERSION=2.2.1
+# export MAVEN_HOME=~/dev/Tools/apache-maven-${MAVEN_VERSION}
+# export PATH=$MAVEN_HOME/bin:$PATH
+# export MAVEN_OPTS=-Xmx1024M
+
+# Play! Framework
+# PLAY_HOME=~/dev/Project/sandbox/play/play-1.0-stable3
+# export PLAY_HOME
+# export PATH=$PLAY_HOME:$PATH
+#
+
+# Ruby
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/shims:$PATH"

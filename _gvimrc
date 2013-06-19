@@ -1,0 +1,19 @@
+set showmode
+set title
+set ruler
+set showcmd
+set showmatch "対応する括弧をハイライト
+set list
+set cursorline "カーソル行をハイライト
+
+
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
+
+hi NonText guifg=#444444
+hi SpecialKey guifg=#444444
+
+colorscheme desert
+
+"autocmd GUIEnter * simalt ~x
