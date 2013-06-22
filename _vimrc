@@ -6,3 +6,6 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.basic
 source ~/Dev/gitrepo/dotfiles/_vimrc.unite
 "plugin SrcExpl
 source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
+"plugin powerline
+source ~/Dev/gitrepo/dotfiles/_vimrc.powerline
+

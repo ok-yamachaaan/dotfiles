@@ -2,6 +2,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 export PATH=$HOME/node_modules/.bin:$PATH
 
+# change tab name for iterm
+function chpwd() { ls; echo -ne "\033]0;$(pwd | rev | awk -F \/ '{print "/"$1"/"$2}' | rev)\007" }
+
 # osx alias
 alias pbc='pbcopy'
 
@@ -47,3 +50,4 @@ export TOMCAT_HOME="/usr/local/Cellar/tomcat/7.0.28"
 # Ruby
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/shims:$PATH"
+

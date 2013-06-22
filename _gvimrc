@@ -14,6 +14,6 @@ source $VIMRUNTIME/menu.vim
 hi NonText guifg=#444444
 hi SpecialKey guifg=#444444
 
-colorscheme desert
+colorscheme solarized
 
 "autocmd GUIEnter * simalt ~x

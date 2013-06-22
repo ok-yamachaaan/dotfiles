@@ -24,10 +24,13 @@ NeoBundle 'wesleyche/SrcExpl'
 NeoBundle 'wesleyche/Trinity'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'taichouchou2/alpaca_powertabline'
+NeoBundle 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim' }
 NeoBundle 'open-browser.vim'
 NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'jonathanfilip/vim-lucius'
 
 filetype plugin indent on
 NeoBundleCheck
