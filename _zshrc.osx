@@ -29,11 +29,10 @@ export JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 # Tomcat
 export TOMCAT_HOME="/usr/local/Cellar/tomcat/7.0.28"
 # # scala
-# export SCALA_HOME=/Users/ozaki/.svm/current/rt
+# export SCALA_HOME=/Users/yamauchi/.svm/current/rt
 # PATH=$SCALA_HOME/bin:$PATH
 # export SCALA_DOC_HOME=$SCALA_HOME/../devel-docs/api/
-#
-# export SCALA_CLASSPATH=~/sandbox/scala/yuroyoro/yuroyoro-util/target/yuroyoro-util-1.0.jar
+
 
 # Maven2
 # export MAVEN_VERSION=2.2.1

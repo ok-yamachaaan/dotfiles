@@ -16,7 +16,6 @@ NeoBundle 'Shougo/vimproc', {
     \ 'unix' : 'make -f make_unix.mak'
   \ }
 \ }
-NeoBundle 'The-NERD-tree'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'taglist.vim'
 NeoBundle 'ZenCoding.vim'
@@ -31,6 +30,6 @@ NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
-
+NeoBundle 'git://github.com/kana/vim-fakeclip.git'
 filetype plugin indent on
 NeoBundleCheck
