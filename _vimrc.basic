@@ -22,12 +22,16 @@ set nowrap
 set showcmd
 set history=1000
 set undolevels=1000
-
+set tabstop=4
+set autoindent
+set expandtab
+set shiftwidth=4
 set background=dark
 colorscheme lucius
 
 " OSのクリップボードを使用する
 set clipboard+=unnamed
+
 
 " ターミナルでマウスを使用できるようにする
 set mouse=a
@@ -77,9 +81,9 @@ vnoremap " "zdi^V"<C-R>z^V"<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 
 " 保存時に行末の空白を除去する
-autocmd BufWritePre * :%s/\s\+$//ge
+"autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/  /ge
+"autocmd BufWritePre * :%s/\t/  /ge
 
 set wrapscan                                   " 最後まで検索したら先頭へ戻る
 set ignorecase                                 " 大文字小文字無視
@@ -110,4 +114,7 @@ onoremap gc :<C-u>normal gc<CR>]
 noremap ; :
 noremap : ;
 inoremap jj <Esc>
+
+"macro
+source $VIMRUNTIME/macros/matchit.vim
 

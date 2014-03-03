@@ -1,6 +1,7 @@
 PS1='\[\033[36m\][\u@\h:\[\033[33m\]\w\[\033[36m\]]\[\033[0m\] \$ '
 
-export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$PATH:/usr/local/share/npm/bin
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 

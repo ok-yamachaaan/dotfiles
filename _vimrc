@@ -6,6 +6,7 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.basic
 source ~/Dev/gitrepo/dotfiles/_vimrc.unite
 "plugin SrcExpl
 source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
-"plugin powerline
-source ~/Dev/gitrepo/dotfiles/_vimrc.powerline
-
+"plugin yank round
+source ~/Dev/gitrepo/dotfiles/_vimrc.yankround
+"plugin emmet ex. zen-conding
+source ~/Dev/gitrepo/dotfiles/_vimrc.emmet

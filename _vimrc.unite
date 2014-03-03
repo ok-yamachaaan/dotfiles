@@ -2,7 +2,7 @@
 " 入力モードで開始する
 " let g:unite_enable_start_insert=1
 nnoremap [unite] <Nop>
-nmap <Space>u [unite]
+nmap <C-u> [unite]
 
 " バッファ一覧
 nnoremap <silent> [unite]b :<C-u>Unite -no-split buffer<CR>

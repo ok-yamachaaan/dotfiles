@@ -6,6 +6,7 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc', {
@@ -18,18 +19,17 @@ NeoBundle 'Shougo/vimproc', {
 \ }
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'taglist.vim'
-NeoBundle 'ZenCoding.vim'
 NeoBundle 'wesleyche/SrcExpl'
 NeoBundle 'wesleyche/Trinity'
 NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'taichouchou2/alpaca_powertabline'
-NeoBundle 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim' }
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'open-browser.vim'
 NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
-NeoBundle 'git://github.com/kana/vim-fakeclip.git'
+NeoBundle 'git://github.com/LeafCage/yankround.vim'
+NeoBundle "mattn/emmet-vim"
 filetype plugin indent on
 NeoBundleCheck
+
