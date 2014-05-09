@@ -4,9 +4,19 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.bundle
 source ~/Dev/gitrepo/dotfiles/_vimrc.basic
 "plugin unite
 source ~/Dev/gitrepo/dotfiles/_vimrc.unite
-"plugin SrcExpl
+"plugin lightline
+source ~/Dev/gitrepo/dotfiles/_vimrc.lightline
+"plugin vimfiler
+"source ~/Dev/gitrepo/dotfiles/_vimrc.vimfiler
+"plugin NeoComplete
+source ~/Dev/gitrepo/dotfiles/_vimrc.neocomplete
+"plugin NeoSnippet
+source ~/Dev/gitrepo/dotfiles/_vimrc.NeoSnippet
+"plugin vimfiler
 source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
 "plugin yank round
 source ~/Dev/gitrepo/dotfiles/_vimrc.yankround
 "plugin emmet ex. zen-conding
 source ~/Dev/gitrepo/dotfiles/_vimrc.emmet
+"plugin vimfiler
+source ~/Dev/gitrepo/dotfiles/_vimrc.NERDTree

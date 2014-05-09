@@ -20,3 +20,6 @@ alias mv='mv -iv'
 alias cl='clear'
 alias grep='grep --color'
 alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
+
+export GOPATH=/usr/local/Celler/1.2/go
+

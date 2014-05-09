@@ -7,7 +7,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle has("lua") ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc', {
    \ 'build' : {
@@ -17,6 +17,8 @@ NeoBundle 'Shougo/vimproc', {
     \ 'unix' : 'make -f make_unix.mak'
   \ }
 \ }
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'taglist.vim'
 NeoBundle 'wesleyche/SrcExpl'
@@ -30,6 +32,10 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'git://github.com/LeafCage/yankround.vim'
 NeoBundle "mattn/emmet-vim"
+NeoBundle "vim-scripts/renamer.vim"
+NeoBundle "mattn/livestyle-vim"
+NeoBundle "kana/vim-submode"
+NeoBundle "scrooloose/nerdtree"
 filetype plugin indent on
 NeoBundleCheck
 

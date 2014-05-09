@@ -27,11 +27,13 @@ set autoindent
 set expandtab
 set shiftwidth=4
 set background=dark
+set ambiwidth=double
+set modifiable
+set write
 colorscheme lucius
 
 " OSのクリップボードを使用する
 set clipboard+=unnamed
-
 
 " ターミナルでマウスを使用できるようにする
 set mouse=a
@@ -40,7 +42,7 @@ set ttymouse=xterm2
 
 "ヤンクした文字は、システムのクリップボードに入れる"
 set clipboard=unnamed
-" 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
+" 挿入モードでCtrl+pを押すとクリップボードの内容を貼り付けられるようにする "
 imap <C-p>  <ESC>"*pa
 
 " Ev/Rvでvimrcの編集と反映
@@ -84,7 +86,6 @@ vnoremap ' "zdi'<C-R>z'<ESC>
 "autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
 "autocmd BufWritePre * :%s/\t/  /ge
-
 set wrapscan                                   " 最後まで検索したら先頭へ戻る
 set ignorecase                                 " 大文字小文字無視
 set smartcase                                  " 検索文字列に大文字が含まれている場合は区別して検索する
@@ -95,8 +96,8 @@ nnoremap <Esc><Esc> :noh<CR>
 
 "選択した文字列を検索
 vnoremap <silent> // y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
-""選択した文字列を置換
-vnoremap /r "xy;%s/<C-R>=escape(@x, '\\/.*$^~[]')<CR>//gc<Left><Left><Left>']')""']'")""""""""""
+"選択した文字列を置換
+vnoremap /r "xy;%s/<C-R>=escape(@x, '\\/.*$^~[]')<CR>//gc<Left><Left><Left>
 
 "keys"
 nnoremap zl zL
@@ -117,4 +118,42 @@ inoremap jj <Esc>
 
 "macro
 source $VIMRUNTIME/macros/matchit.vim
+
+"Window分割系
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sJ <C-w>J
+nnoremap sK <C-w>K
+nnoremap sL <C-w>L
+nnoremap sH <C-w>H
+nnoremap sn gt
+nnoremap sp gT
+nnoremap sr <C-w>r
+nnoremap s= <C-w>=
+nnoremap sw <C-w>w
+nnoremap so <C-w>_<C-w>|
+nnoremap sO <C-w>=
+nnoremap sN :<C-u>bn<CR>
+nnoremap sP :<C-u>bp<CR>
+nnoremap st :<C-u>tabnew<CR>
+nnoremap sT :<C-u>Unite tab<CR>
+nnoremap ss :<C-u>sp<CR>
+nnoremap sv :<C-u>vs<CR>
+nnoremap sq :<C-u>q<CR>
+nnoremap sQ :<C-u>bd<CR>
+nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
+nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+
 
