@@ -3,4 +3,4 @@
 "enable all function in all mode.
 let g:user_emmet_mode='a'
 "trigger
-let g:user_emmet_expandabbr_key = '<C-e>'
+let g:user_emmet_expandabbr_key= '\\'

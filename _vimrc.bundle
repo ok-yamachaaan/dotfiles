@@ -36,6 +36,7 @@ NeoBundle "vim-scripts/renamer.vim"
 NeoBundle "mattn/livestyle-vim"
 NeoBundle "kana/vim-submode"
 NeoBundle "scrooloose/nerdtree"
+NeoBundle 'vim-scripts/AnsiEsc.vim'
 filetype plugin indent on
 NeoBundleCheck
 

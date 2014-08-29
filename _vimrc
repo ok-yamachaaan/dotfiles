@@ -11,7 +11,7 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.lightline
 "plugin NeoComplete
 source ~/Dev/gitrepo/dotfiles/_vimrc.neocomplete
 "plugin NeoSnippet
-source ~/Dev/gitrepo/dotfiles/_vimrc.NeoSnippet
+source ~/Dev/gitrepo/dotfiles/_vimrc.neosnippet
 "plugin vimfiler
 source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
 "plugin yank round
