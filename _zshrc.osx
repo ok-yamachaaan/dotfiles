@@ -70,3 +70,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 #go
 export GOPATH=/usr/local/Celler/go/1.2
+
+# node
+export NODE_PATH=/usr/local/lib/node_modules
+
