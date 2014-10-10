@@ -158,5 +158,3 @@ call submode#map('bufmove', 'n', '', '<', '<C-w><')
 call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
-"html のとじタグの補完
-autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
