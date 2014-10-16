@@ -31,7 +31,8 @@ set ambiwidth=double
 set modifiable
 set write
 set noundofile "kaoriya undo file作成をしない
-set paste
+"set paste neocomplete が動かない
+set pastetoggle=<F12>
 colorscheme lucius
 
 " OSのクリップボードを使用する
@@ -158,3 +159,4 @@ call submode#map('bufmove', 'n', '', '<', '<C-w><')
 call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
+nmap <C-l> <Plug>(openbrowser-open) "openbrowser.vim

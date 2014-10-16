@@ -1,5 +1,5 @@
 "NeoComplete
-if neobundle#is_installed('neocomplete')
+if neobundle#is_installed('neocomplete.vim')
     "neocomplete用設定
     let g:acp_enableAtStartup = 0
     let g:neocomplete#enable_at_startup = 1
@@ -9,7 +9,7 @@ if neobundle#is_installed('neocomplete')
         let g:neocomplete#keyword_patterns = {}
     endif
     let g:neocomplete#keyword_patterns._ = '\h\w*'
-elseif neobundle#is_installed('neocomplcache')
+elseif neobundle#is_installed('neocomplcache.vim')
     " neocomplcache用設定
     let g:neocomplcache_enable_at_startup = 1
     let g:neocomplcache_enable_ignore_case = 1

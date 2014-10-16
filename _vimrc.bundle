@@ -4,7 +4,6 @@ filetype plugin indent off
 
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#rc(expand('~/.vim/bundle/'))
-
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle has("lua") ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
@@ -37,6 +36,7 @@ NeoBundle "mattn/livestyle-vim"
 NeoBundle "kana/vim-submode"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'tpope/vim-fugitive' "git tool on vim
 filetype plugin indent on
 NeoBundleCheck
 
