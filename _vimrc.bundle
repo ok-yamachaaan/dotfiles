@@ -37,6 +37,7 @@ NeoBundle "kana/vim-submode"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'tpope/vim-fugitive' "git tool on vim
+NeoBundle 'scrooloose/syntastic.git'
 filetype plugin indent on
 NeoBundleCheck
 
