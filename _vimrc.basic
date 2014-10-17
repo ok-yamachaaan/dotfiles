@@ -31,9 +31,15 @@ set ambiwidth=double
 set modifiable
 set write
 set noundofile "kaoriya undo file作成をしない
+set syntax on
+set t_Co=256
+set ambiwidth=double
+set modifiable true
+
 "set paste neocomplete が動かない
 set pastetoggle=<F12>
 colorscheme lucius
+"colorscheme desert
 
 " OSのクリップボードを使用する
 set clipboard+=unnamed
