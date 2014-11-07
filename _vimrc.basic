@@ -166,3 +166,5 @@ call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
 nmap <C-l> <Plug>(openbrowser-open) "openbrowser.vim
+autocmd QuickFixCmdPost *grep* cwindow
+
