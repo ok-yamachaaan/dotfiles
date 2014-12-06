@@ -3,8 +3,18 @@ set nocompatible
 filetype plugin indent off
 
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+" Let NeoBundle manage NeoBundle
+" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
+call neobundle#end()
+
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle has("lua") ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
@@ -38,6 +48,9 @@ NeoBundle "scrooloose/nerdtree"
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'tpope/vim-fugitive' "git tool on vim
 NeoBundle 'scrooloose/syntastic.git'
+if has('mac')
+    NeoBundle 'Keithbsmiley/swift.vim'
+endif
 filetype plugin indent on
 NeoBundleCheck
 
