@@ -13,7 +13,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-call neobundle#end()
 
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle has("lua") ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
@@ -29,28 +28,37 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'taglist.vim'
+"NeoBundle 'taglist.vim'
 NeoBundle 'wesleyche/SrcExpl'
 NeoBundle 'wesleyche/Trinity'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'open-browser.vim'
-"NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'git://github.com/LeafCage/yankround.vim'
 NeoBundle "mattn/emmet-vim"
 NeoBundle "vim-scripts/renamer.vim"
-NeoBundle "mattn/livestyle-vim"
+"NeoBundle "mattn/livestyle-vim"
 NeoBundle "kana/vim-submode"
 NeoBundle "scrooloose/nerdtree"
-NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive' "git tool on vim
 NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'rhysd/clever-f.vim' "f検索をいい感じにする
+NeoBundle 'szw/vim-tags'
+NeoBundle 'tobyS/pdv' "php doc gen
+NeoBundle '2072/PHP-Indenting-for-VIm'
+NeoBundle 'kien/ctrlp.vim' "like fuzzyfinder
+NeoBundle 'tacahiroy/ctrlp-funky'
 if has('mac')
     NeoBundle 'Keithbsmiley/swift.vim'
 endif
 filetype plugin indent on
 NeoBundleCheck
 
+call neobundle#end()

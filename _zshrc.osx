@@ -1,6 +1,10 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 export PATH=$HOME/node_modules/.bin:$PATH
+export PATH=$HOME/mytools:$PATH
+export PATH=/usr/local/Cellar/php55/5.5.30/bin:$PATH
+export PATH=/Users/yamauchimasatake/Dev/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
+
 
 # to enable zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -74,3 +78,24 @@ export GOPATH=/usr/local/Celler/go/1.2
 # node
 export NODE_PATH=/usr/local/lib/node_modules
 
+# SSH_AUTH_SOCK
+if [ "$SSH_AUTH_SOCK" = "" ];then
+    sock_tmp=(`ls -t /tmp/com.apple.launchd.*/Listeners 2>/dev/null`)
+    if [ ${#sock_tmp[@]} -eq 0 ];then
+        # For Mavericks or older OS X
+        sock_tmp=(`ls -t /tmp/launchd-*/Listeners 2>/dev/null`)
+    fi
+    for s in ${sock_tmp[@]};do
+        export SSH_AUTH_SOCK=$s
+        ssh-add -l >& /dev/null
+        ret=$?
+        if [ $ret -eq 0 -o $ret -eq 1 ];then
+            break
+        fi
+        unset SSH_AUTH_SOCK
+    done
+    unset sock_tmp
+fi
+
+# CTAGS
+alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'

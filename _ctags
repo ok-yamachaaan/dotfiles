@@ -1,3 +1,6 @@
+--append=yes
+--recurse=yes
+
 --langdef=Scala
 --langmap=scala:.scala
 --regex-scala=/^[ \t]*class[ \t]+([a-zA-Z0-9_]+)/\1/c,classes/
@@ -9,3 +12,5 @@
 --regex-scala=/^[ \t]*package[ \t]+([a-zA-Z0-9_.]+)/\1/p,packages/
 --regex-scala=/^[ \t]*case class[ \t]+([a-zA-Z0-9_]+)/\1/c,case classes/
 --regex-scala=/^[ \t]*object[ \t]+([a-zA-Z0-9_]+)/\1/o,objects/
+
+--php-kinds=cfd

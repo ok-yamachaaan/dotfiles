@@ -1,8 +1,8 @@
 # ls
-alias la="ls -a"
-alias lf="ls -F"
-alias ll="ls -l"
-alias ls="ls -alF"
+alias la="ls -ah"
+alias lf="ls -Fh"
+alias ll="ls -lh"
+alias ls="ls -alFh"
 
 # process
 alias j="jobs -l"
@@ -62,7 +62,7 @@ alias gc='git commit'
 alias gci='git commit -a'
 
 alias java='nocorrect java'
-alias cp='nocorrect cp -irp'
+#alias cp='nocorrect cp -irp'
 alias erl='nocorrect erl'
 alias sbcl='nocorrect sbcl'
 alias gosh='nocorrect gosh'
@@ -74,3 +74,9 @@ alias hg='nocorrect hg --encoding=utf-8'
 # alias scc='scalac -deprecation -unchecked -explaintypes'
 # alias sci='scala -deprecation -unchecked -explaintypes -cp $SCALA_CLASSPATH -i ~/import.scala'
 # alias sce='scala'
+#
+#
+
+# mytools
+alias git-archive='git_diff_archive.sh'
+

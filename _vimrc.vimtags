@@ -1,0 +1,6 @@
+"vim-tags
+set tags+=~/.vim/tags/.tags
+nnoremap <C-]> g<C-]> 
+let g:vim_tags_directories =["~/.vim/tags/", ".git", ".tags"]
+let g:vim_tags_ctags_binary = "/usr/local/Cellar/ctags/5.8/bin/ctags"
+

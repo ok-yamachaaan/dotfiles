@@ -6,8 +6,6 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.basic
 source ~/Dev/gitrepo/dotfiles/_vimrc.unite
 "plugin lightline
 source ~/Dev/gitrepo/dotfiles/_vimrc.lightline
-"plugin vimfiler
-"source ~/Dev/gitrepo/dotfiles/_vimrc.vimfiler
 "plugin NeoComplete
 source ~/Dev/gitrepo/dotfiles/_vimrc.neocomplete
 "plugin NeoSnippet
@@ -20,3 +18,12 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.yankround
 source ~/Dev/gitrepo/dotfiles/_vimrc.emmet
 "plugin vimfiler
 source ~/Dev/gitrepo/dotfiles/_vimrc.NERDTree
+"plugin easymotion
+source ~/Dev/gitrepo/dotfiles/_vimrc.easymotion
+"plugin vim-tags
+source ~/Dev/gitrepo/dotfiles/_vimrc.vimtags
+"plugin vimfiler
+source ~/Dev/gitrepo/dotfiles/_vimrc.nerdcommenter
+"plugin like FuzzyFinder
+source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp
+source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
