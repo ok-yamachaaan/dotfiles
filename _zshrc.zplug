@@ -1,0 +1,32 @@
+source ~/.zplug/zplug
+
+# 「ユーザ名/リポジトリ名」で記述し、ダブルクォートで見やすく括る（括らなくてもいい）
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "zsh-users/zsh-history-substring-search"
+zplug "themes/frisk", from:oh-my-zsh
+zplug "mollifier/anyframe"
+
+
+# check コマンドで未インストール項目があるかどうか verbose にチェックし
+# false のとき（つまり未インストール項目がある）y/N プロンプトで
+# インストールする
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# プラグインを読み込み、コマンドにパスを通す
+zplug load --verbose
+
+#anyframe setting
+fpath=($HOME/.zsh/anyframe(N-/) $fpath)
+autoload -Uz anyframe-init
+anyframe-init
+
+bindkey '^rc' anyframe-widget-cdr
+bindkey '^r^c' anyframe-widget-cdr
+bindkey '^rr' anyframe-widget-execute-history
+bindkey '^r^r' anyframe-widget-execute-history
+

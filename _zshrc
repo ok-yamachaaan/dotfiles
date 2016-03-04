@@ -232,6 +232,9 @@ setopt rm_star_wait
 #
 #  # 勝手にpushd
 #  setopt autopushd
+#
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
 
 # alias設定
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
@@ -246,4 +249,7 @@ linux*)
  [ -f ~/.zshrc.linux ] && source ~/.zshrc.linux
  ;;
  esac
+
+#  Plugin 管理
+[ -f ~/.zshrc.zplug ] && source ~/.zshrc.zplug
 
