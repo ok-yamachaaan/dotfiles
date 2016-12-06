@@ -27,3 +27,5 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.nerdcommenter
 "plugin like FuzzyFinder
 source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp
 source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
+"plugin overcommandline
+source ~/Dev/gitrepo/dotfiles/_vimrc.vim-over

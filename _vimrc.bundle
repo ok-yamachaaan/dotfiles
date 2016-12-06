@@ -57,6 +57,13 @@ NeoBundle 'tobyS/pdv' "php doc gen
 NeoBundle '2072/PHP-Indenting-for-VIm'
 NeoBundle 'kien/ctrlp.vim' "like fuzzyfinder
 NeoBundle 'tacahiroy/ctrlp-funky'
+NeoBundle 'marijnh/tern_for_vim'
+NeoBundle 'osyo-manga/vim-over' "grep時に対象箇所がハイライトする
+NeoBundle 'terryma/vim-expand-region'
+NeoBundle 'mhinz/vim-startify'
+NeoBundle 'tomtom/tcomment_vim'
+
+
 if has('mac')
     NeoBundle 'Keithbsmiley/swift.vim'
 endif

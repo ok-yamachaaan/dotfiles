@@ -1,4 +1,4 @@
-let mapleader= ","              " キーマップリーダー
+let mapleader = "\<Space>"      " キーマップリーダー
 
 set scrolloff=5                  " スクロール時の余白確保
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
@@ -155,6 +155,7 @@ nnoremap sq :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+nnoremap <Leader>w :w<CR> "space + w で保存
 
 call submode#enter_with('winsize', 'n', '', '<C-w>>', '<C-w>>')
 call submode#enter_with('winsize', 'n', '', '<C-w><', '<C-w><')
@@ -170,4 +171,3 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 "w!! でスーパーユーザーとして保存（sudoが使える環境限定）
 cmap w!! w !sudo tee > /dev/null %
-

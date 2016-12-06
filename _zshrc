@@ -54,6 +54,9 @@ setopt correct
 # コマンドライン全てのスペルチェックをする
 setopt correct_all
 
+# 訂正無視リスト
+CORRECT_IGNORE_FILE='.*'
+
 # 上書きリダイレクトの禁止
 setopt no_clobber
 

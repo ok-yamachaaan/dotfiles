@@ -5,7 +5,8 @@ set showcmd
 set showmatch "対応する括弧をハイライト
 set list
 set cursorline "カーソル行をハイライト
-
+set clipboard-=autoselect
+set guioptions-=a
 
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
@@ -76,4 +77,5 @@ if filereadable(expand(s:infofile))
   execute 'source '.s:infofile
 endif
 unlet s:infofile
+
 
