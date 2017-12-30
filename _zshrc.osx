@@ -1,13 +1,16 @@
+
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 export PATH=$HOME/node_modules/.bin:$PATH
 export PATH=$HOME/mytools:$PATH
-export PATH=/usr/local/Cellar/php55/5.5.30/bin:$PATH
 export PATH=/Users/yamauchimasatake/Dev/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
-export HOMEBREW_GITHUB_API_TOKEN="9b7447962b2d92204be17330025fed058dd2b9d2"
+export HOMEBREW_GITHUB_API_TOKEN="aaff693ab47af8de072021211c44e0be4a14eace"
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export PYENV_ROOT="${HOME}/.pyenv"
 export PATH="${PYENV_ROOT}/bin:$PATH"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/Cellar/apache-spark/2.2.0/bin:$PATH
+export PATH=$HOME/.phpenv/versions/5.6.4/composer/vendor/bin:$PATH
 eval "$(pyenv init -)"
 
 
@@ -48,7 +51,9 @@ esac
 # #alias svn='/usr/local/bin/svn'
 
 # Java
-export JAVA_HOME=/Library/Java/Home
+#export JAVA_HOME=/usr/bin/
+export ANDROID_HOME=~/Library/Android/sdk
+
 export PATH=$JAVA_HOME/bin:$PATH
 # # デフォルトエンコーディングSJISをUTF-8へ
 export JAVA_OPTIONS="-Dfile.encoding=UTF-8"
@@ -102,5 +107,18 @@ if [ "$SSH_AUTH_SOCK" = "" ];then
     unset sock_tmp
 fi
 
-# CTAGS
-alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
+# php
+export PHPENV_ROOT=$HOME/.phpenv
+export PATH="$PATH:$PHPENV_ROOT/bin"
+eval "$(rbenv init - zsh)"
+eval "$(phpenv init - zsh)"
+
+#ctags
+alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+
+export PYSPARK_PYTHON=/Users/masatakeyamauchi/.pyenv/shims/python
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+
+export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome

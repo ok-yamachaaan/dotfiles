@@ -27,8 +27,7 @@ case ${UID} in
   PROMPT2="%B%{${fg[cyan]}%}%_#%{${reset_color}%}%b "
   SPROMPT="%B%{${fg[cyan]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
   [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
-  ;;
+  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}" ;;
 *)
   PROMPT="%{${fg[cyan]}%}%/%%%{${reset_color}%} "
   PROMPT2="%{${fg[cyan]}%}%_%%%{${reset_color}%} "
@@ -253,6 +252,6 @@ linux*)
  ;;
  esac
 
-#  Plugin 管理
-[ -f ~/.zshrc.zplug ] && source ~/.zshrc.zplug
+# load zgen
+source "${HOME}/.zshrc.zgen"
 
