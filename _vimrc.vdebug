@@ -1,0 +1,14 @@
+"vdebug
+let g:vdebug_options= {
+            \    "port" : 9000,
+            \    "server" : 'localhost:8080',
+            \    "timeout" : 20,
+            \    "on_close" : 'detach',
+            \    "break_on_open" : 1,
+            \    "ide_key" : '',
+            \    "remote_path" : "",
+            \    "local_path" : "",
+            \    "debug_window_level" : 0,
+            \    "debug_file_level" : 0,
+            \    "debug_file" : "",
+            \}

@@ -25,27 +25,24 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'gmake -f make_unix.mak',
       \    },
       \ }
+
 NeoBundle 'sgur/unite-qf'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'majutsushi/tagbar'
 NeoBundle 'tpope/vim-surround'
-"NeoBundle 'taglist.vim'
 NeoBundle 'wesleyche/SrcExpl'
 NeoBundle 'wesleyche/Trinity'
-NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'open-browser.vim'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'jonathanfilip/vim-lucius'
-NeoBundle 'git://github.com/LeafCage/yankround.vim'
-NeoBundle "mattn/emmet-vim"
 NeoBundle "vim-scripts/renamer.vim"
-"NeoBundle "mattn/livestyle-vim"
 NeoBundle "kana/vim-submode"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive' "git tool on vim
 NeoBundle 'scrooloose/syntastic.git'
@@ -55,14 +52,24 @@ NeoBundle 'rhysd/clever-f.vim' "f検索をいい感じにする
 NeoBundle 'szw/vim-tags'
 NeoBundle 'tobyS/pdv' "php doc gen
 NeoBundle '2072/PHP-Indenting-for-VIm'
-NeoBundle 'kien/ctrlp.vim' "like fuzzyfinder
-NeoBundle 'tacahiroy/ctrlp-funky'
 NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'osyo-manga/vim-over' "grep時に対象箇所がハイライトする
-NeoBundle 'terryma/vim-expand-region'
+"NeoBundle 'terryma/vim-expand-region'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'joonty/vdebug'
+NeoBundle 'yuroyoro/smooth_scroll.vim'
 
+"NeoBundle 'taglist.vim'
+"NeoBundle 'derekwyatt/vim-scala'
+"NeoBundle 'kchmck/vim-coffee-script'
+"NeoBundle 'git://github.com/LeafCage/yankround.vim'
+"
+NeoBundle "mattn/emmet-vim"
+"NeoBundle "mattn/livestyle-vim"
+"NeoBundle 'kien/ctrlp.vim' "like fuzzyfinder
+"NeoBundle 'tacahiroy/ctrlp-funky'
+NeoBundle 'ok-yamachaaan/reload_chrome.vim'
 
 if has('mac')
     NeoBundle 'Keithbsmiley/swift.vim'

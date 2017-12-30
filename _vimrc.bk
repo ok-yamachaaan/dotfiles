@@ -15,7 +15,7 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
 "plugin yank round
 "source ~/Dev/gitrepo/dotfiles/_vimrc.yankround
 "plugin emmet ex. zen-conding
-source ~/Dev/gitrepo/dotfiles/_vimrc.emmet
+"source ~/Dev/gitrepo/dotfiles/_vimrc.emmet
 "plugin vimfiler
 source ~/Dev/gitrepo/dotfiles/_vimrc.NERDTree
 "plugin easymotion
@@ -25,13 +25,9 @@ source ~/Dev/gitrepo/dotfiles/_vimrc.vimtags
 "plugin vimfiler
 source ~/Dev/gitrepo/dotfiles/_vimrc.nerdcommenter
 "plugin like FuzzyFinder
-"source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp
-"source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
+source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp
+source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
 "plugin overcommandline
 source ~/Dev/gitrepo/dotfiles/_vimrc.vim-over
 "plugin vim-expand-region
-"source ~/Dev/gitrepo/dotfiles/_vimrc.vim-expand-region
-"plugin vdebug
-source ~/Dev/gitrepo/dotfiles/_vimrc.vdebug
-"plugin tagbar
-source ~/Dev/gitrepo/dotfiles/_vimrc.tagbar
+source ~/Dev/gitrepo/dotfiles/_vimrc.vim-expand-region
