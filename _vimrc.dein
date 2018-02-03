@@ -1,0 +1,70 @@
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/Users/masatakeyamauchi/.vim/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('/Users/masatakeyamauchi/.vim/dein/')
+  call dein#begin('/Users/masatakeyamauchi/.vim/dein/')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('/Users/masatakeyamauchi/.vim/dein/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/Unite.vim')
+  call dein#add('jonathanfilip/vim-lucius')
+  call dein#add('wesleyche/SrcExpl')
+  call dein#add('wesleyche/Trinity')
+  call dein#add('itchyny/lightline.vim')
+  call dein#add('vim-scripts/open-browser.vim')
+  call dein#add('altercation/vim-colors-solarized')
+
+  call dein#add('jonathanfilip/vim-lucius')
+  call dein#add("vim-scripts/renamer.vim")
+  call dein#add("kana/vim-submode")
+  call dein#add("scrooloose/nerdtree")
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('scrooloose/nerdcommenter')
+  call dein#add('tpope/vim-fugitive') "git tool on vim
+  call dein#add('scrooloose/syntastic.git')
+  call dein#add('Lokaltog/vim-easymotion')
+  call dein#add('vim-scripts/AnsiEsc.vim')
+  call dein#add('rhysd/clever-f.vim') "f検索をいい感じにする
+  call dein#add('szw/vim-tags')
+  call dein#add('2072/PHP-Indenting-for-VIm')
+  call dein#add('marijnh/tern_for_vim')
+  call dein#add('osyo-manga/vim-over')  "grep時に対象箇所がハイライトする
+  call dein#add('mhinz/vim-startify')
+  call dein#add('tomtom/tcomment_vim')
+  call dein#add('joonty/vdebug')
+  call dein#add('yuroyoro/smooth_scroll.vim')
+  call dein#add('mattn/emmet-vim')
+  call dein#add('kien/ctrlp.vim') "like fuzzyfinder
+  call dein#add('tacahiroy/ctrlp-funky')
+  if !has('nvim')
+      call dein#add('roxma/nvim-yarp')
+      call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------

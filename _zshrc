@@ -253,5 +253,5 @@ linux*)
  esac
 
 # load zgen
-source "${HOME}/.zshrc.zgen"
+#source "${HOME}/.zshrc.zgen"
 

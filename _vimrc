@@ -1,37 +1,37 @@
 "neobundle plugin manager
-source ~/Dev/gitrepo/dotfiles/_vimrc.bundle
+source ~/dev/gitrepo/dotfiles/_vimrc.dein
 "basic setting
-source ~/Dev/gitrepo/dotfiles/_vimrc.basic
+source ~/dev/gitrepo/dotfiles/_vimrc.basic
 "plugin unite
-source ~/Dev/gitrepo/dotfiles/_vimrc.unite
+source ~/dev/gitrepo/dotfiles/_vimrc.unite
 "plugin lightline
-source ~/Dev/gitrepo/dotfiles/_vimrc.lightline
-"plugin NeoComplete
-source ~/Dev/gitrepo/dotfiles/_vimrc.neocomplete
+source ~/dev/gitrepo/dotfiles/_vimrc.lightline
+"plugin deoplete
+"source ~/dev/gitrepo/dotfiles/_vimrc.deoplete
 "plugin NeoSnippet
-source ~/Dev/gitrepo/dotfiles/_vimrc.neosnippet
+source ~/dev/gitrepo/dotfiles/_vimrc.neosnippet
 "plugin vimfiler
-source ~/Dev/gitrepo/dotfiles/_vimrc.SrcExpl
+source ~/dev/gitrepo/dotfiles/_vimrc.SrcExpl
 "plugin yank round
-"source ~/Dev/gitrepo/dotfiles/_vimrc.yankround
+"source ~/dev/gitrepo/dotfiles/_vimrc.yankround
 "plugin emmet ex. zen-conding
-source ~/Dev/gitrepo/dotfiles/_vimrc.emmet
+source ~/dev/gitrepo/dotfiles/_vimrc.emmet
 "plugin vimfiler
-source ~/Dev/gitrepo/dotfiles/_vimrc.NERDTree
+source ~/dev/gitrepo/dotfiles/_vimrc.NERDTree
 "plugin easymotion
-"source ~/Dev/gitrepo/dotfiles/_vimrc.easymotion
+"source ~/dev/gitrepo/dotfiles/_vimrc.easymotion
 "plugin vim-tags
-source ~/Dev/gitrepo/dotfiles/_vimrc.vimtags
+source ~/dev/gitrepo/dotfiles/_vimrc.vimtags
 "plugin vimfiler
-source ~/Dev/gitrepo/dotfiles/_vimrc.nerdcommenter
+source ~/dev/gitrepo/dotfiles/_vimrc.nerdcommenter
 "plugin like FuzzyFinder
-"source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp
-"source ~/Dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
+"source ~/dev/gitrepo/dotfiles/_vimrc.ctrlp
+"source ~/dev/gitrepo/dotfiles/_vimrc.ctrlp-funky
 "plugin overcommandline
-source ~/Dev/gitrepo/dotfiles/_vimrc.vim-over
+source ~/dev/gitrepo/dotfiles/_vimrc.vim-over
 "plugin vim-expand-region
-"source ~/Dev/gitrepo/dotfiles/_vimrc.vim-expand-region
+"source ~/dev/gitrepo/dotfiles/_vimrc.vim-expand-region
 "plugin vdebug
-source ~/Dev/gitrepo/dotfiles/_vimrc.vdebug
+source ~/dev/gitrepo/dotfiles/_vimrc.vdebug
 "plugin tagbar
-source ~/Dev/gitrepo/dotfiles/_vimrc.tagbar
+source ~/dev/gitrepo/dotfiles/_vimrc.tagbar
