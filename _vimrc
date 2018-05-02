@@ -1,13 +1,13 @@
 "neobundle plugin manager
-source ~/dev/gitrepo/dotfiles/_vimrc.bundle
+source ~/dev/gitrepo/dotfiles/_vimrc.dein
 "basic setting
 source ~/dev/gitrepo/dotfiles/_vimrc.basic
 "plugin unite
-source ~/Dev/gitrepo/dotfiles/_vimrc.unite
+source ~/dev/gitrepo/dotfiles/_vimrc.unite
 "plugin lightline
 source ~/dev/gitrepo/dotfiles/_vimrc.lightline
-"plugin NeoComplete
-source ~/dev/gitrepo/dotfiles/_vimrc.neocomplete
+"plugin deoplete
+"source ~/dev/gitrepo/dotfiles/_vimrc.deoplete
 "plugin NeoSnippet
 source ~/dev/gitrepo/dotfiles/_vimrc.neosnippet
 "plugin vimfiler
@@ -35,3 +35,5 @@ source ~/dev/gitrepo/dotfiles/_vimrc.vim-over
 source ~/dev/gitrepo/dotfiles/_vimrc.vdebug
 "plugin tagbar
 source ~/dev/gitrepo/dotfiles/_vimrc.tagbar
+"plugin jedi
+source ~/dev/gitrepo/dotfiles/_vimrc.jedi

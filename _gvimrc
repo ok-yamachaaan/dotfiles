@@ -15,11 +15,11 @@ source $VIMRUNTIME/menu.vim
 hi NonText guifg=#336666
 hi SpecialKey guifg=#336666
 
-colorscheme solarized
+colorscheme wombat
 
 "フォント関連
-set guifont=Ricty:h14
-set guifontwide=Ricty:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifontwide=Source\ Code\ Pro\ for\ Powerline:h14
 set antialias
 
 

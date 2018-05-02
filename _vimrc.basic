@@ -170,6 +170,7 @@ call submode#map('winsize', 'n', '', '-', '<C-w>-')
 nmap <C-l> <Plug>(openbrowser-open) "openbrowser.vim
 autocmd QuickFixCmdPost *grep* cwindow
 
+
 "w!! でスーパーユーザーとして保存（sudoが使える環境限定）
 cmap w!! w !sudo tee > /dev/null %
 

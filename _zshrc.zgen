@@ -12,9 +12,16 @@ zgen prezto prompt theme 'giddie'
 zgen prezto
 zgen prezto git
 zgen prezto command-not-found
-zgen prezto syntax-highlighting
 zgen prezto osx
 zgen prezto archive
+
+zgen load zsh-users/zsh-syntax-highlighting
+zgen load zsh-users/zsh-completions
+zgen load mollifier/anyframe
+zgen load rupa/z
+zgen load mafredri/zsh-async
+zgen load sindresorhus/pure
+zgen load lukechilds/zsh-better-npm-completion
 
 # save all to init script
 zgen save
