@@ -1,0 +1,21 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'leico/autodate.vim'
+
+[[plugins]]
+repo = 'jonathanfilip/vim-lucius'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+	let g:lightline = {
+		\ 'colorscheme': 'wombat'
+		\ }
+ 
+	" # show statusbar
+	set laststatus=2
+	" # hide --INSERT--
+	set noshowmode
+'''

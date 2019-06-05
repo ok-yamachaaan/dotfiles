@@ -31,7 +31,9 @@ set background=dark
 set modifiable
 set write
 set noundofile "kaoriya undo file作成をしない
-set t_Co=256
+if !has('gui_running')
+  set t_Co=256
+endif
 set ambiwidth=double
 set modifiable
 set write
@@ -49,7 +51,6 @@ set clipboard+=unnamed
 " ターミナルでマウスを使用できるようにする
 set mouse=a
 set guioptions+=a
-set ttymouse=xterm2
 
 "ヤンクした文字は、システムのクリップボードに入れる"
 set clipboard=unnamed
@@ -81,6 +82,9 @@ let &t_EI = "\e]50;CursorShape=0\x7"
 nmap y9 y$
 nmap y0 y^
 
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 " 括弧を自動補完
 "inoremap { {}<LEFT>
 "inoremap [ []<LEFT>
@@ -158,18 +162,18 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
-call submode#enter_with('winsize', 'n', '', '<C-w>>', '<C-w>>')
-call submode#enter_with('winsize', 'n', '', '<C-w><', '<C-w><')
-call submode#enter_with('winsize', 'n', '', '<C-w>+', '<C-w>+')
-call submode#enter_with('winsize', 'n', '', '<C-w>-', '<C-w>-')
-call submode#map('winsize', 'n', '', '>', '<C-w>>')
-call submode#map('winsize', 'n', '', '<', '<C-w><')
-call submode#map('winsize', 'n', '', '+', '<C-w>+')
-call submode#map('winsize', 'n', '', '-', '<C-w>-')
+"call submode#enter_with('winsize', 'n', '', '<C-w>>', '<C-w>>')
+"call submode#enter_with('winsize', 'n', '', '<C-w><', '<C-w><')
+"call submode#enter_with('winsize', 'n', '', '<C-w>+', '<C-w>+')
+"call submode#enter_with('winsize', 'n', '', '<C-w>-', '<C-w>-')
+"call submode#map('winsize', 'n', '', '>', '<C-w>>')
+"call submode#map('winsize', 'n', '', '<', '<C-w><')
+"call submode#map('winsize', 'n', '', '+', '<C-w>+')
+"call submode#map('winsize', 'n', '', '-', '<C-w>-')
 
 nmap <C-l> <Plug>(openbrowser-open) "openbrowser.vim
 autocmd QuickFixCmdPost *grep* cwindow
-
+au BufRead,BufNewFile *.md set filetype=markdown
 
 "w!! でスーパーユーザーとして保存（sudoが使える環境限定）
 cmap w!! w !sudo tee > /dev/null %

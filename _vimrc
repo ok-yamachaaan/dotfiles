@@ -1,11 +1,11 @@
 "neobundle plugin manager
-source ~/dev/gitrepo/dotfiles/_vimrc.dein
+source ~/dev/gitrepo/dotfiles/vim/_vimrc.dein
 "basic setting
 source ~/dev/gitrepo/dotfiles/_vimrc.basic
 "plugin unite
 source ~/dev/gitrepo/dotfiles/_vimrc.unite
 "plugin lightline
-source ~/dev/gitrepo/dotfiles/_vimrc.lightline
+"source ~/dev/gitrepo/dotfiles/_vimrc.lightline
 "plugin deoplete
 "source ~/dev/gitrepo/dotfiles/_vimrc.deoplete
 "plugin NeoSnippet
@@ -15,7 +15,7 @@ source ~/dev/gitrepo/dotfiles/_vimrc.SrcExpl
 "plugin yank round
 "source ~/dev/gitrepo/dotfiles/_vimrc.yankround
 "plugin emmet ex. zen-conding
-source ~/dev/gitrepo/dotfiles/_vimrc.emmet
+"source ~/dev/gitrepo/dotfiles/_vimrc.emmet
 "plugin vimfiler
 source ~/dev/gitrepo/dotfiles/_vimrc.NERDTree
 "plugin easymotion
@@ -37,3 +37,5 @@ source ~/dev/gitrepo/dotfiles/_vimrc.vdebug
 source ~/dev/gitrepo/dotfiles/_vimrc.tagbar
 "plugin jedi
 source ~/dev/gitrepo/dotfiles/_vimrc.jedi
+"plugin mrkdown-preview
+source ~/dev/gitrepo/dotfiles/_vimrc.markdown-preview

@@ -65,7 +65,7 @@ NeoBundle 'yuroyoro/smooth_scroll.vim'
 "NeoBundle 'kchmck/vim-coffee-script'
 "NeoBundle 'git://github.com/LeafCage/yankround.vim'
 "
-NeoBundle "mattn/emmet-vim"
+"NeoBundle "mattn/emmet-vim"
 "NeoBundle "mattn/livestyle-vim"
 "NeoBundle 'kien/ctrlp.vim' "like fuzzyfinder
 "NeoBundle 'tacahiroy/ctrlp-funky'
