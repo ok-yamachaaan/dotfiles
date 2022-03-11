@@ -42,8 +42,6 @@ set wildmode=longest:full,full
 
 "set paste neocomplete が動かない
 set pastetoggle=<F12>
-colorscheme lucius
-"colorscheme desert
 
 " OSのクリップボードを使用する
 set clipboard+=unnamed

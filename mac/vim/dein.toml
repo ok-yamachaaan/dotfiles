@@ -5,7 +5,14 @@ repo = 'Shougo/dein.vim'
 repo = 'leico/autodate.vim'
 
 [[plugins]]
-repo = 'jonathanfilip/vim-lucius'
+repo = 'vim-scripts/Lucius'
+hook_add = '''
+  set background=dark
+  augroup colorschemeSetting
+    autocmd!
+    autocmd VimEnter * ++nested colorscheme lucius
+  augroup END
+'''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'

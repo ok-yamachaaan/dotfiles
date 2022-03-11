@@ -3,7 +3,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 export PATH=$HOME/node_modules/.bin:$PATH
 export PATH=$HOME/mytools:$PATH
-export PATH=/Users/yamauchimasatake/Dev/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
+export PATH=/Users/yamauchimasatake/dev/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
 export HOMEBREW_GITHUB_API_TOKEN=""
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export PYENV_ROOT="${HOME}/.pyenv"
@@ -38,41 +38,9 @@ alias vi='env LANG=ja_JP.UTF-8 /usr/local/bin/nvim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /usr/local/bin/nvim "$@"'
 alias gvim='macvim'
 
-
-# SVN
-# #alias svn='/usr/local/bin/svn'
-
-# Java
-#export JAVA_HOME=/usr/bin/
-export ANDROID_HOME=~/Library/Android/sdk
-
 export PATH=$JAVA_HOME/bin:$PATH
 # # デフォルトエンコーディングSJISをUTF-8へ
 export JAVA_OPTIONS="-Dfile.encoding=UTF-8"
-
-# Tomcat
-export TOMCAT_HOME="/usr/local/Cellar/tomcat/7.0.28"
-# # scala
-# export SCALA_HOME=/Users/yamauchi/.svm/current/rt
-# PATH=$SCALA_HOME/bin:$PATH
-# export SCALA_DOC_HOME=$SCALA_HOME/../devel-docs/api/
-
-
-# Maven2
-# export MAVEN_VERSION=2.2.1
-# export MAVEN_HOME=~/dev/Tools/apache-maven-${MAVEN_VERSION}
-# export PATH=$MAVEN_HOME/bin:$PATH
-# export MAVEN_OPTS=-Xmx1024M
-
-# Play! Framework
-# PLAY_HOME=~/dev/Project/sandbox/play/play-1.0-stable3
-# export PLAY_HOME
-# export PATH=$PLAY_HOME:$PATH
-#
-
-#go
-#export GOPATH=/usr/local/Celler/go/1.2
-export GOPATH=$HOME/go
 
 # node
 export NODE_PATH=/usr/local/lib/node_modules
@@ -99,23 +67,8 @@ fi
 #ctags
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
-#anyenv
-if [ -d $HOME/.anyenv ] ; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-    # tmux対応
-    for D in `\ls $HOME/.anyenv/envs`
-    do
-        export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
-    done
-fi
-
-export PYSPARK_PYTHON=/Users/masatakeyamauchi/.pyenv/shims/python
-export PYSPARK_DRIVER_PYTHON=jupyter
-export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
-export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
-
 export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-eval "$(direnv hook zsh)"

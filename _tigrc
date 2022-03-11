@@ -1,9 +1,0 @@
-#メインビューにIDを追加
-set main-view = id date author commit-title:graph=yes, refs=yes
-# 縦割
-set vertical-split = yes
-set split-view-height = 80%
-#diffの行数を増やす
-set diff-context = 6
-
-

@@ -1,0 +1,9 @@
+brew 'git'
+brew "neovim"
+brew "rename"
+brew "pyenv"
+
+cask 'docker'
+
+tap "homebrew/bundle"
+tap "homebrew/core"

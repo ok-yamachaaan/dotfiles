@@ -20,23 +20,6 @@ setopt prompt_subst
 
 # Default shell configuration
 autoload colors
-colors
-case ${UID} in
-0)
-  PROMPT="%B%{${fg[cyan]}%}%/#%{${reset_color}%}%b "
-  PROMPT2="%B%{${fg[cyan]}%}%_#%{${reset_color}%}%b "
-  SPROMPT="%B%{${fg[cyan]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
-  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}" ;;
-*)
-  PROMPT="%{${fg[cyan]}%}%/%%%{${reset_color}%} "
-  PROMPT2="%{${fg[cyan]}%}%_%%%{${reset_color}%} "
-  SPROMPT="%{${fg[cyan]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
-  [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
-  ;;
-esac
-
 
 # 指定したコマンド名がなく、ディレクトリ名と一致した場合 cd する
 setopt auto_cd
