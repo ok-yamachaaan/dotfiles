@@ -1,5 +1,7 @@
 name: learn-github-actions
 on: [push]
+env:
+  HOGE: ${{ secrets.TEST2 == 'aa' && secrets.TEST} || "bbb"}}
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -8,3 +10,4 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+      - run: echo env.HOGE
