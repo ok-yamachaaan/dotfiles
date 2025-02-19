@@ -6,7 +6,6 @@ export LESSCHARSET=utf-8
 # 補完
 autoload -U compinit
 compinit
-
 # bind key
 bindkey -v
 #bindkey "^?"    backward-delete-char
@@ -93,6 +92,11 @@ setopt nolistbeep
 #  setopt extended_glob
 
 # historical backward/forward search with linehead string binded to ^P/^N
+
+# history関連
+export HISTTIMEFORMAT='%F %T '
+setopt extended_history
+alias history='history -t "%F %T"'
 
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
@@ -183,53 +187,16 @@ setopt print_exit_value
 #  # rm_star_silent の逆で、10 秒間反応しなくなり、頭を冷ます時間が与えられる
 setopt rm_star_wait
 
-# for, repeat, select, if, function などで簡略文法が使えるようになる
-#  #setopt short_loops
-#
-#  # デフォルトの複数行コマンドライン編集ではなく、１行編集モードになる
-#  #setopt single_line_zle
-#
-#  # コマンドラインがどのように展開され実行されたかを表示するようになる
-#  #setopt xtrace
-#
-#  # ^でcd ..する
-#  function cdup() {
-#  echo
-#  cd ..
-#  zle reset-prompt
-#  }
-#  zle -N cdup
-#  # bindkey '\^' cdup
-#
-#  # ctrl-w, ctrl-bキーで単語移動
-#  bindkey "^W" forward-word
-#  bindkey "^B" backward-word
-#
-#  # back-wordでの単語境界の設定
-#  autoload -Uz select-word-style
-#  select-word-style default
-#  zstyle ':zle:*' word-chars " _-./;@"
-#  zstyle ':zle:*' word-style unspecified
-#
-#  # URLをコピペしたときに自動でエスケープ
-#  autoload -Uz url-quote-magic
-#  zle -N self-insert url-quote-magic
-#
-#  # 勝手にpushd
-#  setopt autopushd
-#
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-add-zsh-hook chpwd chpwd_recent_dirs
+#autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+#add-zsh-hook chpwd chpwd_recent_dirs
 
 # alias設定
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 
 case "${OSTYPE}" in
-## Mac(Unix)
 darwin*)
  [ -f ~/.zshrc.osx ] && source ~/.zshrc.osx
  ;;
-# Linux
 linux*)
  [ -f ~/.zshrc.linux ] && source ~/.zshrc.linux
  ;;
@@ -238,3 +205,9 @@ linux*)
 # load zgen
 source "${HOME}/.zshrc.zgen"
 
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/masatake.yamauchi/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

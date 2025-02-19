@@ -22,8 +22,11 @@ alias less='less -iMR'
 # grep
 alias grep='grep --color=auto -ERUIn'
 
+# aws
+alias 'aws'=/usr/local/bin/aws
+
+
 #make
-# alias 'm'='make'
 # alias 'mn'='make native-code'
 # alias 'mc'='make clean'
 # screen
@@ -54,7 +57,7 @@ alias tml='tmux list-sessions'
 #
 
 # docker
-alias dc='docker-compose'
+alias dc='docker compose'
 
 #brew Coreutils
 alias cp="gcp"
@@ -67,3 +70,4 @@ function cdls() {
   ls;
 }
 alias cd=cdls
+alias sed='gsed'

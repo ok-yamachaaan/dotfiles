@@ -39,6 +39,8 @@ set modifiable
 set write
 set nocompatible
 set wildmode=longest:full,full
+let g:vim_json_syntax_conceal = 0
+set conceallevel=0
 
 "set paste neocomplete が動かない
 set pastetoggle=<F12>
@@ -52,8 +54,8 @@ set guioptions+=a
 
 "ヤンクした文字は、システムのクリップボードに入れる"
 set clipboard=unnamed
-" 挿入モードでCtrl+pを押すとクリップボードの内容を貼り付けられるようにする "
-imap <C-p>  <ESC>"*pa
+" Ctrl+pで、レジスター0を貼り付け"
+vnoremap <silent> <C-p> "0p<CR>
 
 " Ev/Rvでvimrcの編集と反映
 command! Ev edit $MYVIMRC
@@ -175,4 +177,3 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 "w!! でスーパーユーザーとして保存（sudoが使える環境限定）
 cmap w!! w !sudo tee > /dev/null %
-

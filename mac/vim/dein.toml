@@ -26,3 +26,5 @@ hook_add = '''
 	" # hide --INSERT--
 	set noshowmode
 '''
+[[plugins]]
+repo = 'chase/vim-ansible-yaml'

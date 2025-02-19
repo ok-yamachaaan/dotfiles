@@ -22,7 +22,7 @@ else
     echo "--- Install Homebrew is Start! ---"
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> /Users/${USER}/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/${USER}/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     brew bundle
 
@@ -30,8 +30,8 @@ else
 fi
 
 # pyenv
-pyenv install 3.9.10
-pyenv global 3.9.10
+pyenv install 3.12
+pyenv global 3.12
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
@@ -56,16 +56,11 @@ echo "--- done ---"
 # vim and plugins
 echo "--- Install nvim ---" 
 brew install --HEAD luajit
+brew install --HEAD lualock
 brew install --HEAD neovim
-echo "--- done ---"
-
-echo "--- Install dein ---"
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.cache/dein
-
 mkdir ~/.config/nvim
-ln -sf ~/dev/gitrepos/dotfiles/mac/vim/dein.toml ~/.config/nvim/dein.toml
-ln -sf ~/dev/gitrepos/dotfiles/mac/vim/dein.lazy.toml ~/.config/nvim/dein.lazy.toml
-ln -sf ~/dev/gitrepos/dotfiles/mac/vim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/dev/gitrepos/dotfiles/mac/nvim/init.lua ~/.config/nvim/init.lua
+ln -sf ~/dev/gitrepos/dotfiles/mac/nvim/lazy-lock.json ~/.config/nvim/lazy-lock.json
+ln -sf ~/dev/gitrepos/dotfiles/mac/nvim/lua ~/.config/nvim/lua
 
 echo "--- done ---"
